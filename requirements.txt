@@ -1,0 +1,17 @@
+# Python dependencies for:
+#   manders_colocalization.py
+#   non-euclidian-septum.py
+#
+# Tested with Python 3.12. Install with:
+#   pip install -r requirements.txt
+#
+# M1_anova_analysis.R is an R script; its packages are not installed by pip
+# (see README: readxl, dplyr, tidyr, ggplot2, car).
+
+numpy==2.5.3
+scipy==1.18.1
+scikit-image==0.26.0          # >=0.19 needed (expand_labels, equivalent_diameter_area)
+tifffile==2026.9.20
+matplotlib==3.11.2            # only needed for --qc figures in manders_colocalization.py
+pandas==3.0.6                 # non-euclidian-septum.py
+opencv-python-headless==5.0.0.93  # provides cv2; headless = no GUI, fine for these scripts
